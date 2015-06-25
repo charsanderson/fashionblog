@@ -20,139 +20,160 @@ Developer @GA in NYC
 }
 
 /* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
 
-.clear {
-	clear: both;
-}
-
-.alignright {
-	float: right; 
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-	float: left; 
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-
-a:link {
-    text-decoration: none;
-    
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #A00;
-}
-
-a:active {
-    text-decoration: none;
-}
 
 /******************************************
 /* BASE STYLES                   
 /*******************************************/
 
 
-header nav{
-    text-decoration: underline;
-    color: #BBB;
-    font-size: 25px;
-    word-spacing: 10px;
-}
-
-
 body {
-     max-width: 800px;
-     color: #000;
-     font-family: 'Lato', sans-serif;
-     font-size: 1.6 ;
-     line-height: 1.5;
-     font-family: Helvetica, Arial, sans-serif;
-     margin:50px;
-     text-decoration: none;
+    width:100%;     
+    margin: 0;
+    padding: 3em;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #FFF;
+    color: #444;
+    border-left: 6px solid #DDD;
+    
 }
+
+header{
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+nav ul {
+    display: block;
+    clear:both;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: .5em 2.5em;
+    color: #fff;
+    background-color: #000;
+}
+
+nav ul li a:hover
+{
+    color: #fff;
+    background-color: #444;
+}
+
+
+
+
+main {
+    float: left;
+    width:70%;
+}
+
+aside {
+    margin-top: 50px;
+    padding-left: 50px;
+    float:right;
+    width: 30%;
+   
+}
+
 
 article{
 
     padding-bottom: 50px;
+    
+    }
+
+img {
+     width: 100%;
+
 
 }
 
+
+
 h1 a{  
+    float: left;
     font-family: 'Lato', sans-serif;
     font-size: 50px;
     letter-spacing: 2px;
     text-decoration: none;
+    line-height: -25px;
     color: #D00;
 }
 
 h2 {
      font-family: 'Lato', sans-serif;
      color:#444;
+     letter-spacing: 2px;
+     line-height: 45px;
+     float: left;
+
 
 }
 
-h2 a{
+article h2 a{
      font-family: 'Lato', sans-serif;
      color:#444;
 
 }
 
 h3 {
+
      font-family: 'Lato', sans-serif;
      padding-top: 40px;
      font-size: 34px;
      color: #BBB;
-     vertical-align: bottom
+    
 }
 
 h4 a{
      float: right;
      color:red;
-}
-
-
-div{
-     text-align: center;
-}
-
-nav a {
-     text-decoration: underlined;
-     font-family: 'Lato', sans-serif;
-     color: #BBB;
-     width: 100%;
-     padding-right: 10px;
+     padding: 10px;
 
 }
 
+aside section{
+    padding-bottom: 50px;
+}
 
-
-p span {
-    float: left;
+aside h5{
     font-family: 'Lato', sans-serif;
-    font-size: 64px;
-    padding-right:8px;
-    color: #bdbdbd;
+    font-weight: 900;
+    color: #444;
 }
 
 
-img {
 
-    max-width: 800px;
+
+article p:first-letter {
+    float: left;
+    font-size: 6em;
+    line-height: 1;
+    color: #DDD;
+    margin: -.1em .1em 0 -.1em;
 }
+
+
+
 
 footer{
     color:#bdbdbd;
@@ -166,5 +187,43 @@ footer a{
     padding-right: 10px;
     padding-left: 10px;
     color:  #D00;
+
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.alignright {
+    float: right; 
+    padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+    float: left; 
+    padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+a:link {
+    text-decoration: none;
+    
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
 }
 
